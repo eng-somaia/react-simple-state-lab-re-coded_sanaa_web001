@@ -17,7 +17,7 @@ constructor(props) {
   }
 render() {
     return (
-    <div className="cell" style={{backgroundColor: {this.state.color} }} onClick={this.clickEvent}>
+    <div className="cell" style={{backgroundColor: this.state.color }} onClick={this.clickEvent}>
     {this.state.color}
     </div>
     )
