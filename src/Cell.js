@@ -8,9 +8,8 @@ constructor(props) {
       color: this.props.value
   }
 }
-
+const newColor = '#333'
  clickEvent = () => {
-    const newColor = '#333'
     this.setState({ color: newColor })
   }
 render() {
