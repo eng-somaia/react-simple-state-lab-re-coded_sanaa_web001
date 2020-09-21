@@ -5,7 +5,7 @@ export default class Cell extends Component {
 constructor(props) {
   super()
   this.state = {
-      color: this.props.value
+      color: this.props.value;
   }
 }
 
@@ -17,7 +17,7 @@ constructor(props) {
   }
 render() {
     return (
-    <div className="cell" style={{backgroundColor: this.state.color }} onClick={this.clickEvent}>
+    <div className="cell" style={{backgroundColor: {this.state.color} }} onClick={this.clickEvent}>
     {this.state.color}
     </div>
     )
